@@ -1,0 +1,42 @@
+vim会将我们以前的行为都记录在'viminfo'中,查看: '~/.viminfo'
+
+其实无需修改:'/etc/vimrc'中的vim配置参数,可以通过修改'~/.vimrc'这个文件来设置vim的环境参数(注意:如果这个文件不存在可以手动创建)
+示例:
+vim ~/.vimrc
+set xxx
+set xxx
+...
+创建并保存这个文件后,下次启动vim时就会按照这个文件中的参数进行环境配置.
+
+vim常用的环境参数如下所示:(注意:'set'前的':'可以省略)
+#设置行号
+:set nu
+#取消行号
+:set nonu
+#设置高亮查找
+:set hlsearch
+#取消高亮查找
+:set nohlsearch
+#自动备份文件
+:set backup
+#开启右下角状态说明
+:set ruler
+#显示左下角如:INSERT之类的状态栏
+:set showmode
+#设置退格键功能(为2时可以删除任意字符,为0/1时可以删除刚输入的字符)
+:set backspace{0,1,2}
+#显示目前所有的环境参数值
+:set all
+#显示与系统默认值不同的参数值
+:set
+#设置是否开启显示相关程序语法高亮功能
+:syntax on/off
+#设置背景为夜间模式
+colorscheme evening
+#以C/C++的模式缩进
+:set cindent
+#设置tab长度为4
+:set tabstop=4
+#..End
+
+#If you want to konw about vim deeply,please refer to : http://blog.csdn.net/xiajun07061225/article/details/7039413
