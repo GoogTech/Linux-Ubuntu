@@ -37,6 +37,12 @@ colorscheme evening
 :set cindent
 #设置tab长度为4
 :set tabstop=4
+#自动对齐
+:set autoindent
+#括号匹配
+:set showmatch
+#智能对齐
+:set smartindent
 #..End
 
 #If you want to konw about vim deeply,please refer to : http://blog.csdn.net/xiajun07061225/article/details/7039413
